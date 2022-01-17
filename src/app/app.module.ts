@@ -12,6 +12,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import {CommonModule} from '@angular/common';
 import {DropdownDirective} from "./shared/dropdown.directive";
+import { RecipeService } from './recipes/recipe.service';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import {DropdownDirective} from "./shared/dropdown.directive";
     CommonModule,
     CommonModule
   ],
-  providers: [],
+  providers: [RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
